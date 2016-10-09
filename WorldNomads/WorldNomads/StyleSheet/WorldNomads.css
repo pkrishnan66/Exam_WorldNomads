@@ -1,0 +1,19 @@
+﻿.textBox
+{
+    min-width:  850px;
+    min-height: 100px;
+}
+
+.textTop
+{
+    vertical-align:text-top;
+}
+
+.textSpace
+{
+    width: 100px;
+}
+.height
+{
+    height:40px;
+}

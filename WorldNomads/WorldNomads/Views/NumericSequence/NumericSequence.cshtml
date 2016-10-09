@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "NumericSequence";
+}
+<script src="~/Scripts/angular.js"></script>
+<script src="~/Scripts/NumericSequence.js"></script>
+<link href="~/StyleSheet/WorldNomads.css" rel="stylesheet" />
+<h2>Numeric Sequence Progessing Logic</h2>
+<body data-ng-app="WorldNomads">
+    <div id="divResults" data-ng-controller="numericSequenceController">
+        <table>
+            <tr>
+                <td colspan="2" class="textTop">Enter a Valid Positive Integer
+                </td>
+                <td class="textSpace"></td>
+                <td>
+                    <input type="text" data-ng-model="inputValue" data-ng-disabled="istextDisabled" onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+                </td>
+            </tr>
+            <tr class="height"></tr>
+            <tr>
+                <td class="textTop">
+                    <input type="checkbox" data-ng-click="SetEvenSequence()"
+                        data-ng-model="NumericBuilderCheckbox.chkEvenSequence" />
+                </td>
+                <td class="textTop">
+                    <label>{{ InitializeEvenSequence }}</label>
+                </td>
+                <td class="textSpace"></td>
+                <td>
+                    <textarea cols="40" class="textBox" data-ng-disabled="true" rows="5">{{ EvenSequeunce }}</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="textTop">
+                    <input type="checkbox" data-ng-click="SetOddSequence()"
+                        data-ng-model="NumericBuilderCheckbox.chkOddSequence" />
+                </td>
+                <td class="textTop">
+                    <label>{{ InitializeOddSequence }}</label>
+                </td>
+                <td class="textSpace"></td>
+                <td>
+                    <textarea cols="40" class="textBox" data-ng-disabled="true" rows="5">{{ OddSequence }}</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="textTop">
+                    <input type="checkbox" data-ng-click="SetNumericSequence()"
+                        data-ng-model="NumericBuilderCheckbox.chkNumericSequence" />
+                </td>
+                <td class="textTop">
+                    <label>{{ InitializeNumericSequence }}</label>
+                </td>
+                <td class="textSpace"></td>
+                <td>
+                    <textarea cols="40" class="textBox" data-ng-disabled="true" rows="5">{{ NumericSequence }}</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="textTop">
+                    <input type="checkbox" data-ng-click="SetSpecialSequence()"
+                        data-ng-model="NumericBuilderCheckbox.chkSpecialSequence" />
+                </td>
+                <td class="textTop">
+                    <label>{{ InitializeSpecialSequence }}</label>
+                </td>
+                <td class="textSpace"></td>
+                <td>
+                    <textarea cols="40" class="textBox" data-ng-disabled="true" rows="5">{{ SpecialSequence }}</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="textTop">
+                    <input type="checkbox" data-ng-click="SetFibonacciSequence()"
+                        data-ng-model="NumericBuilderCheckbox.chkFibSequence" />
+                </td>
+                <td class="textTop">
+                    <label>{{ InitializeFibSequence }}</label>
+                </td>
+                <td class="textSpace"></td>
+                <td>
+                    <textarea cols="40" class="textBox" data-ng-disabled="true" rows="5">{{ FibonacciSequence }}</textarea>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+</body>

@@ -1,0 +1,4 @@
+C:\WorldNomads\WorldNomads.ProcessingLogic\bin\Debug\WorldNomads.ProcessingLogic.dll
+C:\WorldNomads\WorldNomads.ProcessingLogic\bin\Debug\WorldNomads.ProcessingLogic.pdb
+C:\WorldNomads\WorldNomads.ProcessingLogic\obj\Debug\WorldNomads.ProcessingLogic.dll
+C:\WorldNomads\WorldNomads.ProcessingLogic\obj\Debug\WorldNomads.ProcessingLogic.pdb
